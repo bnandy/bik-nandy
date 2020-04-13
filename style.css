@@ -4,3 +4,8 @@
 .space-left{
   margin-left: 2vw;
 }
+.image{
+  margin-left: 5vw;
+  style: 100%;
+  margin-right: 5vw;
+}
