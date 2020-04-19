@@ -18,20 +18,20 @@
 }
 
 /* modal hover */
-#img1 {
+.img1 {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
 }
 
-#img1:hover {opacity: 0.7;}
+.img1:hover {opacity: 0.7;}
 
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  padding-top: 10vh; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -46,7 +46,7 @@
   margin: auto;
   display: block;
   width: 80%;
-  max-width: 700px;
+  max-width: 50vh;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */

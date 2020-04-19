@@ -38,13 +38,13 @@
       </div>
       <div class="row pt-3">
         <div class="col-lg-3 col-md-4 col-sm-12 pl-4 pb-4 text-center">
-          <img class = "imgr myImg" id = "img1" src="./images/sing.jpg" alt="bik">
+          <img class = "imgr img1" src="./images/sing.jpg" alt="bik">
         </div>
         <div class="col-lg-3 col-md-4 col-sm-12 pb-4 text-center">
-          <img class = "imgr" src="./images/la.jpg" alt="la">
+          <img class = "imgr img1"  src="./images/la.jpg" alt="la">
         </div>
         <div class="col-lg-3 col-md-4 col-sm-12 pb-4 text-center">
-          <img class = "imgr" src="./images/wood.jpg" alt="wood">
+          <img class = "imgr" id = "img1" src="./images/wood.jpg" alt="wood">
         </div>
         <div class="col-lg-3 col-md-4 col-sm-12 pb-4 text-center">
           <img class = "imgr" src="./images/harry.jpg" alt="harry">
@@ -63,7 +63,7 @@
       <span class="close">&times;</span>
 
       <!-- Modal Content (The Image) -->
-      <img class="modal-content" id="img1">
+      <img class="modal-content" id="modalimg">
 
     </div>
 
@@ -74,14 +74,18 @@
       var modal = document.getElementById("myModal");
 
       // Get the image and insert it inside the modal - use its "alt" text as a caption
-      var img = document.getElementById("img1");
-      var modalImg = document.getElementById("img1");
+      var img = document.getElementsByClassName("img1");
+      console.log(img)
+      var modalImg = document.getElementById("modalimg");
 
-      img.onclick = function(){
-        modal.style.display = "block";
-        img.src = this.src;
-        console.log(img.src)
+      for (var i = 0; i < img.length; i++){
+        img[i].onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+        }
       }
+
+
 
       // Get the <span> element that closes the modal
       var span = document.getElementsByClassName("close")[0];
