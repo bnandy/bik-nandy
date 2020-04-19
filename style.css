@@ -12,3 +12,7 @@
   max-width: 100%;
   height: auto;
 }
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
