@@ -6,44 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
     <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    <div>
-      <h1 class= "ml-3 mt-3"> Media </h1>
-    </div>
-    <nav class = "pl-2 pb-2 pt-3">
-      <div>
-        <a class = "ml-3" href="index.html">Home</a>
-        <a class = "ml-3" href="images.html" >Images</a>
-        <a class = "ml-3" href="media.html" >Media</a>
-        <a class = "ml-3" href="projects.html" >Projects</a>
-      </div>
-    </nav>
-
-    <div class="row pt-3 pl-3">
-      <div class = "column pl-4">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/KL1TJ1Tk_IE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <div class = "column pl-5">
-        <iframe src="https://open.spotify.com/embed/album/2gluD3lGruEr432nJtNFuS" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-      </div>
-      <div class = "column pl-5">
-        <iframe src="https://open.spotify.com/embed/album/3kEsbQavVT51PtOTLY4Q5R" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-      </div>
-    </div>
-    <div class="row pt-3 pl-3">
-      <div class = "column pl-4">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/obkrMiyDrbs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </div>
-
-
-
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/15868bb940.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"> Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="images.html"> Images </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="media.html"> Media </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html"> Projects </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class = "container-fluid">
+      <div class = "row">
+        <div class = "col">
+            <h1 class= "ml-3 mt-3"> Media </h1>
+        </div>
+      </div>
+
+      <div class="row pt-3 pl-3 mr-md-0 mr-3 justify-content-md-center">
+        <div class = "embed-responsive embed-responsive-16by9 col-lg-5 col-md-12 col-sm-12 mb-4 mr-3">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/KL1TJ1Tk_IE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class = "embed-responsive embed-responsive-1by1 col-lg-3 col-md-3 col-sm-12 mb-4 text-center mr-3">
+          <iframe class="embed-responsive-item text-center" src="https://open.spotify.com/embed/album/2gluD3lGruEr432nJtNFuS" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+        <div class = "embed-responsive embed-responsive-1by1 col-lg-3 col-md-3 col-sm-12 mb-4 text-center mr-3">
+          <iframe class="embed-responsive-item text-center" src="https://open.spotify.com/embed/album/3kEsbQavVT51PtOTLY4Q5R" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+        <div class = "embed-responsive embed-responsive-1by1 col-lg-3 col-md-3 col-sm-12 mb-4 text-center mr-3">
+          <iframe class="embed-responsive-item text-center" src="https://open.spotify.com/embed/album/6RtYCQ7cx03yCWkuDsQE9l" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+        <div class = "embed-responsive embed-responsive-1by1 col-lg-3 col-md-3 col-sm-12 mb-4 text-center mr-3">
+          <iframe class="embed-responsive-item text-center" src="https://open.spotify.com/embed/album/6G9DX8QdBcv9Nmag8nuM1f" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+        <div class = "embed-responsive embed-responsive-16by9 col-lg-5 col-md-12 col-sm-12 mb-4">
+          <iframe class="embed-responsive-item"src="https://www.youtube.com/embed/obkrMiyDrbs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script type="text/javascript" src="./js/project.js"></script>
+    <script>
+      mybutton = document.getElementById("myBtn");
+      window.onscroll = function() {scrollFunction()};
+    </script>
   </body>
   <footer class = "pl-4 pt-4">
     <p>&copy Copyright 2020, Bik Nandy</p>
