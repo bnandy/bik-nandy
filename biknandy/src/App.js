@@ -7,6 +7,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import $ from 'jquery';
 import Popper from 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+import Home from './components/home';
+import Projects from './components/projects';
 
 class App extends Component {
   constructor(){
@@ -14,6 +16,15 @@ class App extends Component {
     this.state= {
       activeTab: 1
     }
+
+    this.changeTab = this.changeTab.bind(this);
+
+  }
+
+  changeTab = (id) => {
+    this.setState({
+      activeTab: id
+    })
   }
 
   render() {
@@ -23,14 +34,26 @@ class App extends Component {
       {id: 3, title: "Media"},
       {id: 4, title: "Projects"}
     ]
+
+    let page;
+    if (this.state.activeTab == 1){
+      page = <Home />;
+    } else if (this.state.activeTab == 2){
+
+    } else if (this.state.activeTab == 3){
+
+    } else if (this.state.activeTab == 4){
+      page = <Projects />;
+    }
+
     return (
       <div>
         <div>
-          <TabList tabs={tabs}/>
+          <TabList tabs={tabs} activeTab = {this.state.activeTab} changeTab = {this.changeTab}/>
         </div>
 
         <div>
-
+          {page}
         </div>
         {/* <BrowserRouter>
           <div>
@@ -41,7 +64,9 @@ class App extends Component {
             <Route exact path="/projects" component = {} />
 
         </BrowserRouter> */}
-
+        <footer className = "pl-4 pt-4">
+            <p> {'\u00A9'} Copyright 2020, Bik Nandy</p>
+        </footer>
       </div>
     )
   }
