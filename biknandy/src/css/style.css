@@ -1,8 +1,17 @@
+.nav-bar{
+  display: flex;
+}
 .flex-display{
   display: flex;
 }
 .space-left{
   margin-left: 2vw;
+}
+.space-right{
+  margin-right: 2vw;
+}
+.padding{
+  padding: 5px;
 }
 .image{
   margin-left: 1vw;
