@@ -9,6 +9,7 @@ import Popper from 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import Home from './components/home';
 import Projects from './components/projects';
+import Media from './components/media';
 
 class App extends Component {
   constructor(){
@@ -41,7 +42,7 @@ class App extends Component {
     } else if (this.state.activeTab == 2){
 
     } else if (this.state.activeTab == 3){
-
+      page = <Media />;
     } else if (this.state.activeTab == 4){
       page = <Projects />;
     }
