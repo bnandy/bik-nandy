@@ -7,9 +7,13 @@ import 'bootstrap/dist/css/bootstrap.css';
 import $ from 'jquery';
 import Popper from 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+import SimpleReactLightbox from "simple-react-lightbox";
+
 import Home from './components/home';
 import Projects from './components/projects';
 import Media from './components/media';
+import Images from './components/images'
+
 
 class App extends Component {
   constructor(){
@@ -40,7 +44,9 @@ class App extends Component {
     if (this.state.activeTab == 1){
       page = <Home />;
     } else if (this.state.activeTab == 2){
-
+      page = <SimpleReactLightbox>
+        <Images />
+      </SimpleReactLightbox>
     } else if (this.state.activeTab == 3){
       page = <Media />;
     } else if (this.state.activeTab == 4){
