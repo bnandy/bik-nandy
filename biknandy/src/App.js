@@ -8,6 +8,7 @@ import $ from 'jquery';
 import Popper from 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import SimpleReactLightbox from "simple-react-lightbox";
+import {CircleArrow as ScrollUpButton} from "react-scroll-up-button";
 
 import Home from './components/home';
 import Projects from './components/projects';
@@ -55,6 +56,10 @@ class App extends Component {
 
     return (
       <div>
+        <ScrollUpButton
+          StopPosition={0}
+          ShowAtPosition={50}
+        />
         <div>
           <TabList tabs={tabs} activeTab = {this.state.activeTab} changeTab = {this.changeTab}/>
         </div>

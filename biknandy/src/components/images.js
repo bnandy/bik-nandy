@@ -11,6 +11,12 @@ import holiday from '../images/holiday.jpg';
 
 export default class Images extends Component {
   render(){
+    const options = {
+      showCaption: false,
+      showThumbnails: false,
+      showDownloadButton: false,
+      hideControlsAfter: 1000
+    }
     return(
       <div>
         <Container fluid>
@@ -23,32 +29,32 @@ export default class Images extends Component {
           </Row>
           <Row className = "pt-3">
             <Col lg={3} md={4} sm ={12} className = "pl-4 pb-4 text-center">
-              <SRLWrapper>
-                <img className = "imgr" src={sing}/>
+              <SRLWrapper options = {options}>
+                <img className = "imgr" src={sing} alt = "sing"/>
               </SRLWrapper>
             </Col>
             <Col lg={3} md={4} sm ={12} className = "pl-4 pb-4 text-center">
-              <SRLWrapper>
+              <SRLWrapper options = {options}>
                 <img className = "imgr" src={la}/>
               </SRLWrapper>
             </Col>
             <Col lg={3} md={4} sm ={12} className = "pl-4 pb-4 text-center">
-              <SRLWrapper>
+              <SRLWrapper options = {options}>
                 <img className = "imgr" src={wood}/>
               </SRLWrapper>
             </Col>
             <Col lg={3} md={4} sm ={12} className = "pl-4 pb-4 text-center">
-              <SRLWrapper>
+              <SRLWrapper options = {options}>
                 <img className = "imgr" src={harry}/>
               </SRLWrapper>
             </Col>
             <Col lg={3} md={4} sm ={12} className = "pl-4 pb-4 text-center">
-              <SRLWrapper>
+              <SRLWrapper options = {options}>
                 <img className = "imgr" src={bhouse}/>
               </SRLWrapper>
             </Col>
             <Col lg={3} md={4} sm ={12} className = "pl-4 pb-4 text-center">
-              <SRLWrapper>
+              <SRLWrapper options = {options}>
                 <img className = "imgr" src={holiday}/>
               </SRLWrapper>
             </Col>
